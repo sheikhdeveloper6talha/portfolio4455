@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./public/images/portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./public/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/all.min.js" integrity="sha512-fxASHhXi6WjjUR9Hr8qt2IxNW2AzyZOpoPi4+UgVU0lTFNKMQ8INkZaQ5ZED2aAldHuHNaLlaHuwQ1oGT+LHhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js" integrity="sha512-kz526itdNcpyMs18TLPOhsnIeOIO1JywWKbbF77zR+ZKpZ4gwubXhwaURHpt5Se9AAqSK2j8ID0LnfXsB2Jkjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">Muhammad Talha Sheikh</div>
+  <div class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+  <nav id="nav">
+    <a href="#hero" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#expertise">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#case">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <div class="tag">Fullstack Developer</div>
+  <h1>Muhammad Talha Sheikh</h1>
+  <h2>Building Digital Experiences</h2>
+  <p>Crafting exceptional web applications with modern technologies.</p>
+
+  <div class="buttons">
+    <button class="btn btn-primary" onclick="gotoWhatsApp()">Contact Me →</button>
+    <button class="btn btn-outline"><a href="#projects">View Projects</a> </button>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+  <div class="stat">
+    <h3>6</h3>
+    <p>Month Experience</p>
+  </div>
+  <div class="stat">
+    <h3>7</h3>
+    <p>Projects Completed</p>
+  </div>
+  <div class="stat">
+    <h3>5M+</h3>
+    <p>Users Impacted</p>
+  </div>
+  <div class="stat">
+    <h3>99%</h3>
+    <p>Client Satisfaction</p>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="./public/images/talhaSheikhfix.png" alt="profile">
+    </div>
+    <div class="about-content">
+      <div class="tag">Fullstack Developer</div>
+      <h2>Muhammad Talha Sheikh</h2>
+<h2>Crafting Digital</h2>
+      <h2>Experience</h2>
+      <p>
+        I build exceptional digital experiences with modern technologies,
+        specializing in both frontend and backend development to create
+        scalable and user-friendly applications.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <section class="services-section" id="services">
+        <div class="grid-overlay"></div>
+
+        <div class="container">
+            <div class="header">
+                <span class="badge">Services</span>
+                <h1>Specialized Development Services</h1>
+                <p>Expert solutions tailored to your technical challenges</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="card">
+                    <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                    <h3>Frontend Development</h3>
+                    <p>Creating responsive, interactive user interfaces with React.js, Next.js, and modern CSS frameworks like Tailwind.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box"><i class="fa-brands fa-autoprefixer"></i></div>
+                    <h3>Backend Development</h3>
+                    <p>Building robust server-side applications with Node.js, Express, and Python to power your digital products.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box"> <i class="fa-brands fa-autoprefixer"></i> </div>
+                    <h3>API Development</h3>
+                    <p>Design and implementation of RESTful and GraphQL APIs that enable seamless communication between systems.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box"><i class="fa-brands fa-autoprefixer"></i></div>
+                    <h3>Database Architecture</h3>
+                    <p>Expert database design, optimization, and management to ensure your data is scalable and secure.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box"><i class="fa-brands fa-autoprefixer"></i></div>
+                    <h3>Full-Stack Web Apps</h3>
+                    <p>End-to-end development of web applications, bridging the gap between front-end and back-end.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box"><i class="fa-brands fa-autoprefixer"></i></div>
+                    <h3>Security Implementation</h3>
+                    <p>Implementing robust authentication, authorization, and data encryption to keep your apps safe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- start Technical Expertise -->
+ 
+  <section class="expertise-section" id="expertise">
+    <div class="circuit-bg"></div>
+    
+    <div class="container">
+        <div class="header">
+            <span class="badge">Tech Stack</span>
+            <h1>Technical Expertise</h1>
+            <p>Specialized in cutting-edge technologies for creating exceptional digital experiences.</p>
+        </div>
+
+        <div class="orbit-wrapper">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+            
+            <div class="central-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                <span>Docker</span>
+            </div>
+        </div>
+
+       <div class="expertise-grid">
+    <div class="exp-card">
+        <div class="icon-container">
+            <div class="icon-inner"><i class="fa-brands fa-uikit"></i></div>
+        </div>
+        <h3>Frontend</h3>
+        <p>Creating beautiful, responsive user interfaces</p>
+        <div class="tag-container">
+            <span class="tag">Flutter</span>
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind CSS</span>
+        </div>
+    </div>
+
+    <div class="exp-card">
+        <div class="icon-container">
+            <div class="icon-inner"><i class="fa-brands fa-uikit"></i></div>
+        </div>
+        <h3>Backend</h3>
+        <p>Building robust server-side applications</p>
+        <div class="tag-container">
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">Flask</span>
+            <span class="tag">REST-API</span>
+        </div>
+    </div>
+
+    <div class="exp-card">
+        <div class="icon-container">
+            <div class="icon-inner"><i class="fa-brands fa-uikit"></i></div>
+        </div>
+        <h3>Infrastructure</h3>
+        <p>Deploying and scaling applications</p>
+        <div class="tag-container">
+            <span class="tag">AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="case-study-section" id="case">
+    <div class="grid-overlay"></div>
+
+    <div class="container">
+        <div class="header">
+            <span class="badge">Featured Work</span>
+            <h1>Case Study</h1>
+            <p>An in-depth look at one of my most impactful projects</p>
+        </div>
+
+        <div class="case-study-card">
+            <div class="content-side">
+                <span class="category-badge">Case Study</span>
+                <h2>Aleris AI Conversational Health Companion</h2>
+                <p>Aleris AI is an intelligent health assistant that empowers users to manage everyday wellness through natural conversations...</p>
+
+                <div class="section-block">
+                    <h3>The Challenge</h3>
+                    <p>Health-related information can be overwhelming and inaccessible to many individuals...</p>
+                </div>
+
+                <div class="section-block">
+                    <h3>The Solution</h3>
+                    <p>The frontend was built with React and TailwindCSS for fast, responsive UI development...</p>
+                </div>
+
+                <div class="section-block">
+                    <h3>The Results</h3>
+                    <ul>
+                        <li>42% increase in conversion rate</li>
+                        <li>65% improvement in page load speed</li>
+                        <li>3x faster deployment of new features</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="preview-side">
+                <div class="app-mockup">
+                    <div class="chat-header">How can I help you today?</div>
+                    <div class="stat-card mood">
+                        <span> Mood</span>
+                        <strong>Positive</strong>
+                    </div>
+                </div>
+
+                <div class="info-badges">
+                    <div class="info-box">
+                        <label>Technologies</label>
+                        <div class="pill-row">
+                            <span>Next.js</span> <span>React.js</span> <span>Node.js</span> <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <label>Timeline</label>
+                        <strong>3 months</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects-section" id="projects">
+    <div class="grid-overlay"></div>
+
+    <div class="container">
+        <div class="header">
+            <span class="badge">Projects</span>
+            <h1>Featured Projects</h1>
+            <p>A selection of my recent fullstack development work</p>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" onclick="gotoGitHub()">
+                <div class="project-preview github-bg">
+                    <span class="tech-label">GitHub API</span>
+                    <img src="./public/images/github.png" alt="">
+                    <div class="live-indicator"><span></span> Live Project</div>
+                </div>
+                <div class="project-info">
+                    <h3>GitHub Profile Search</h3>
+                    <p>A specialized search engine using GitHub API to fetch and display user profiles, repositories, and contribution statistics in real-time.</p>
+                    <div class="tag-row">
+                        <span>React</span> <span>JavaScript</span> <span>GitHub API</span> <span>CSS3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card"  onclick="gotoYouTube()">
+                <div class="project-preview youtube-bg">
+                    <span class="tech-label">YouTube API</span>
+                    <img src="./public/images/youtube.png" alt="">
+                    <div class="live-indicator"><span></span> Live Project</div>
+                </div>
+                <div class="project-info">
+                    <h3>YouTube Video Finder</h3>
+                    <p>Search and discover YouTube short videos seamlessly using the YouTube Data API with a focus on speed and UI/UX.</p>
+                    <div class="tag-row">
+                        <span>JavaScript</span> <span>API</span> <span>Next.js</span> <span>Tailwind</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="gotoCRUD()">
+                <div class="project-preview student-bg">
+                    <span id="local" class="tech-label">LocalStorage</span>
+                    <img src="./public/images/CRUD.png" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>Student Portal (CRUD)</h3>
+                    <p>A full management system with LocalStorage. Features Add/Edit/Delete, gender filters, and name-based search functionality.</p>
+                    <div class="tag-row">
+                        <span>JS</span> <span>LocalStorage</span> <span>CRUD</span> <span>Filtering</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="gotoEcommerce()">
+                <div class="project-preview shop-bg">
+                    <span class="tech-label">Full Logic</span>
+                    <img src="./public/images/ecomerce.png" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce with Auth</h3>
+                    <p>Cart system requiring login, unique email validation, and full form validation. Managed entirely via LocalStorage logic.</p>
+                    <div class="tag-row">
+                        <span>React</span> <span>Auth Logic</span> <span>Cart</span> <span>Validation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="gotoCalculator()">
+                <div class="project-preview calc-bg">
+                    <span class="tech-label">Vanilla JS</span>
+                    <img src="./public/images/calculator.png" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>Scientific Calculator</h3>
+                    <p>A dual-mode calculator supporting basic arithmetic and advanced scientific functions with a sleek dark interface.</p>
+                    <div class="tag-row">
+                        <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="gotoTicTacToe()">
+                <div class="project-preview calc-bg">
+                    <span class="tech-label">Vanilla JS</span>
+                    <img src="./public/images/tictactoe.png" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>Tic Tac Toe</h3>
+                    <p>I developed a fully functional Tic-Tac-Toe game using HTML, CSS, and JavaScript. It features real-time win/draw logic, a responsive UI with a smooth gradient design, and a quick restart functionality for an engaging user experience.</p>
+                    <div class="tag-row">
+                        <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="gotoLandingPage()">
+                <div class="project-preview calc-bg">
+                    <span class="tech-label">Vanilla JS</span>
+                    <img src="./public/images/landingPaages.png" alt="">
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce Landing Page</h3>
+                    <p>I developed a fully functional Tic-Tac-Toe game using HTML, CSS, and JavaScript. It features real-time win/draw logic, a responsive UI with a smooth gradient design, and a quick restart functionality for an engaging user experience.</p>
+                    <div class="tag-row">
+                        <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- start Contact section -->
+
+
+
+<section class="contact-section" id="contact">
+    <div class="header">
+        <h1>Get In Touch</h1>
+        <p>Interested in working together? Let's discuss your project</p>
+    </div>
+
+    <div class="container1">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            
+            <div class="info-item">
+                <div class="icon-box"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                    <span>Email</span>
+                    <a style="text-decoration: none; color: #fff;" href="mailto:sheikhdeveloper6@gmail.com">sheikhdeveloper6@gmail.com</a> 
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div>
+                    <span>LinkedIn</span>
+                    <a style="text-decoration: none; color: #fff;" href="www.linkedin.com/in/sheikh-talha-9671193a4">www.linkedin.com/in/sheikh-talha-9671193a4</a> 
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon-box"><i class="fa-brands fa-github"></i></div>
+                <div>
+                    <span>GitHub</span>
+                    <a style="text-decoration: none; color: #fff;" href="https://github.com/sheikhdeveloper6talha">https://github.com/sheikhdeveloper6talha</a>                 </div>
+            </div>
+
+            <div class="availability-card">
+                <h3>Availability</h3>
+                <p>I'm currently available for freelance work and consulting. My typical response time is within 24 hours.</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <div class="progress-labels">
+                    <small>Current Availability</small>
+                    <small>70%</small>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Your email">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Subject</label>
+                <input type="text" value="Project inquiry">
+            </div>
+
+            <div class="input-group">
+                <label>Message</label>
+                <textarea rows="6" placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <div class="policy">
+                <input type="checkbox" id="privacy">
+                <label for="privacy">I agree to the <span class="link">Privacy Policy</span></label>
+            </div>
+
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>Muhammad Talha Sheikh</h2>
+            <p>Building exceptional digital experiences with modern technologies. Available for freelance work and consulting.</p>
+            <div class="social-icons">
+                <a href="https://github.com/sheikhdeveloper6talha" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="www.linkedin.com/in/sheikh-talha-9671193a4" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:sheikhdeveloper6@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Muhammad Talha Sheikh. All rights reserved.</p>
+        <p>Designed & Built with <span class="heart"></span></p>
+    </div>
+</footer>
+</body>
+<script src="./public/app.js"></script>
+</html>
