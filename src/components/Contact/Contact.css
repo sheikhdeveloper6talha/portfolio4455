@@ -1,0 +1,169 @@
+.contact-section {
+  --bg-dark: #0a0e14;
+  --card-bg: #111821;
+  --input-bg: #161b22;
+  --accent-purple: #7c5dfa;
+  --text-main: #ffffff;
+  --text-dim: #92929f;
+  --border-color: #252b36;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.contact-section .section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-section .section-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.contact-section .section-header p {
+  color: var(--text-dim);
+}
+
+.container1 {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: 15px;
+  min-width: 300px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.contact-info .icon-box {
+  background: #1e242c;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+
+.info-item span {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+.info-item a {
+  margin: 2px 0 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.availability-card {
+  background: rgba(124, 93, 250, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.progress-container {
+  background: #252b36;
+  height: 8px;
+  border-radius: 10px;
+  margin: 15px 0 8px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #7c5dfa, #9e7aff);
+  border-radius: 10px;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-dim);
+}
+
+.contact-form {
+  flex: 1.5;
+  min-width: 350px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: var(--input-bg);
+  border: 1px solid var(--border-color);
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  font-family: inherit;
+}
+
+.policy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.link {
+  color: var(--accent-purple);
+  cursor: pointer;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #406aff, #a361ff);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+  .container1 {
+    flex-direction: column;
+  }
+}

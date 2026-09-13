@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+a {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Shared section heading styles used across multiple sections */
+.badge {
+  border: 1px solid #333;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #a1a1aa;
+  background: rgba(255, 255, 255, 0.05);
+  display: inline-block;
+}
+
+.section-container {
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section-header p {
+  color: #a1a1aa;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+/* Skeleton / suspense fallback */
+.section-fallback {
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-size: 14px;
+}
