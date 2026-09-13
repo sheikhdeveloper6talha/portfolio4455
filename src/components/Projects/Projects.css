@@ -39,7 +39,7 @@ height: 600px;
 
 .footerDES{
   transform: translateY(40px);
-  background: black;
+  background: rgb(10, 10, 10);
   color: lightgrey;
   height: 1000px;
   transition: all 0.9s;

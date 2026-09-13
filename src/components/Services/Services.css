@@ -49,7 +49,7 @@ z-index: 1;
   position: absolute;
   width: 100px;
   height: 400px;
-  background: #1e293b;
+  background: rgb(245, 61, 61);
 z-index: -1;
 transform: rotate(45deg);
 }
