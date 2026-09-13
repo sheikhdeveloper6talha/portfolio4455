@@ -5,7 +5,7 @@ export default function CaseStudy() {
     <section className="case-study-section" id="case">
       <div className="grid-overlay"></div>
 
-      <div className="section-container">
+      <div className="section-container1">
         <div className="section-header">
           <span className="badge">Featured Work</span>
           <h1>Case Study</h1>

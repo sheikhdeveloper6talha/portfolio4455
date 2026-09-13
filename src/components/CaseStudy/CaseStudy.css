@@ -16,6 +16,24 @@
   background-size: 40px 40px;
   z-index: -1;
 }
+.section-container1{
+content: '';
+top: 0;
+left: 0;
+position: relative;
+overflow: hidden;
+
+}
+.section-container1::after{
+  content: '';
+top: 145px;
+left: 24px;
+position: absolute;
+background: rgb(245, 61, 61);
+width: 95%;
+height: 10px;
+border-radius: 10px;
+}
 .content-side{
   overflow: hidden;
   position: relative;
