@@ -16,7 +16,38 @@
   background-size: 40px 40px;
   z-index: -1;
 }
-
+.content-side{
+  overflow: hidden;
+  position: relative;
+z-index: 1;
+}
+.content-side::after{
+content: '';
+bottom: -10px;
+left: -360px;
+position: absolute;
+width: 930px;
+height: 450px;
+background: rgb(245, 58, 58);
+transform: rotate(50deg);
+z-index: -1;
+}
+.preview-side{
+  overflow: hidden;
+  position: relative;
+z-index: 1;
+}
+.preview-side::after{
+content: '';
+bottom: -10px;
+right: -360px;
+position: absolute;
+width: 930px;
+height: 450px;
+background: rgb(245, 58, 58);
+transform: rotate(-52deg);
+z-index: -1;
+}
 .case-study-card {
   display: flex;
   max-width: 1100px;
